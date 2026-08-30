@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <svg class="backdrop" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6b3a9c" />
+            <stop offset="28%" stop-color="#8d4aab" />
+            <stop offset="52%" stop-color="#c75aa6" />
+            <stop offset="78%" stop-color="#7a4aa8" />
+            <stop offset="100%" stop-color="#4a2d78" />
+          </linearGradient>
+          <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f4eefe" />
+            <stop offset="55%" stop-color="#d5c6ee" />
+            <stop offset="100%" stop-color="#b09ad6" />
+          </linearGradient>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe27a" />
+            <stop offset="100%" stop-color="#f0b43a" />
+          </radialGradient>
+        </defs>
+
+        <rect width="1440" height="900" fill="url(#sky)" />
+
+        <g fill="#e3b4d8" opacity="0.9">
+          <ellipse cx="280" cy="150" rx="58" ry="22" />
+          <ellipse cx="318" cy="142" rx="42" ry="18" />
+          <ellipse cx="250" cy="144" rx="30" ry="14" />
+          <ellipse cx="1120" cy="170" rx="70" ry="24" />
+          <ellipse cx="1168" cy="160" rx="46" ry="18" />
+          <ellipse cx="1088" cy="164" rx="34" ry="14" />
+          <ellipse cx="160" cy="240" rx="40" ry="16" opacity="0.7" />
+        </g>
+
+        <path fill="#52307a" d="M0 430 L220 250 L340 340 L560 180 L760 330 L920 240 L1140 360 L1440 250 V900 H0 Z" />
+        <path fill="#3d2466" d="M0 500 L250 330 L410 420 L660 250 L860 390 L1020 300 L1260 420 L1440 340 V900 H0 Z" />
+        <path fill="#2f1a52" d="M0 580 L180 490 L330 540 L520 430 L740 520 L900 450 L1120 530 L1440 470 V900 H0 Z" />
+
+        <ellipse cx="720" cy="860" rx="980" ry="280" fill="url(#snow)" />
+
+        <g transform="translate(40,430)">
+          <polygon points="110,320 10,320 60,70" fill="#2a4f78" />
+          <polygon points="110,250 20,250 65,40" fill="#35688f" />
+          <polygon points="105,170 30,170 68,-10" fill="#3f7aa3" />
+          <path fill="#e8f4fb" d="M42 95 Q68 70 88 98 Q70 88 42 95Z" />
+          <path fill="#d7ecf6" d="M28 175 Q68 145 100 180 Q68 164 28 175Z" />
+          <path fill="#cfe6f2" d="M18 255 Q68 220 108 258 Q68 240 18 255Z" />
+        </g>
+
+        <g transform="translate(150,470) scale(1.15)">
+          <polygon points="110,300 8,300 59,40" fill="#1f5c82" />
+          <polygon points="108,230 18,230 63,10" fill="#2a7198" />
+          <polygon points="102,150 28,150 65,-30" fill="#3484ab" />
+          <path fill="#edf7fd" d="M40 70 Q65 42 86 74 Q66 62 40 70Z" />
+          <path fill="#dff0f8" d="M26 155 Q65 122 98 158 Q65 140 26 155Z" />
+          <path fill="#d2e8f4" d="M16 235 Q64 198 106 238 Q64 218 16 235Z" />
+        </g>
+
+        <g transform="translate(280,500) scale(0.85)">
+          <polygon points="110,300 10,300 60,50" fill="#2d6488" />
+          <polygon points="106,230 20,230 63,20" fill="#38779b" />
+          <polygon points="100,155 30,155 65,-15" fill="#4489ae" />
+          <path fill="#eaf6fb" d="M42 80 Q65 55 84 82 Q65 70 42 80Z" />
+          <path fill="#dceef6" d="M28 160 Q64 132 96 164 Q64 148 28 160Z" />
+        </g>
+
+        <g transform="translate(900,560) scale(0.55)">
+          <polygon points="110,300 10,300 60,50" fill="#4a6d96" />
+          <polygon points="104,220 22,220 63,20" fill="#587ea8" />
+          <path fill="#e4eef8" d="M34 150 Q63 118 90 152 Q63 136 34 150Z" />
+        </g>
+
+        <g transform="translate(1060,508)">
+          <g fill="rgba(230,214,242,0.5)" class="smoke-puffs">
+            <circle cx="154" cy="10" r="7" />
+            <circle cx="166" cy="-4" r="11" />
+            <circle cx="180" cy="-16" r="14" />
+          </g>
+          <rect x="146" y="28" width="16" height="38" rx="2" fill="#3a2462" />
+          <path fill="#2a1748" d="M18 96 Q18 62 110 58 Q202 62 202 96 L186 108 H34 Z" />
+          <path fill="#f2ecf8" d="M30 84 Q110 54 190 84 Q110 70 30 84 Z" />
+          <rect x="42" y="96" width="136" height="62" rx="14" fill="#4a2d72" />
+          <rect x="68" y="118" width="22" height="16" rx="4" fill="url(#glow)" />
+          <rect x="130" y="118" width="22" height="16" rx="4" fill="url(#glow)" />
+        </g>
+      </svg>
+    </div>
+
+    <main class="card">
+      <form id="login-form" class="panel active" novalidate>
+        <h1>Login</h1>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input
+            type="password"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
+        </label>
+
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" name="remember" />
+            Remember Me
+          </label>
+          <button type="button" class="link" data-show="forgot">
+            Forget Password
+          </button>
+        </div>
+
+        <button type="submit" class="submit">Log in</button>
+
+        <p class="switch">
+          Don't have a account
+          <button type="button" class="link" data-show="register">
+            Register
+          </button>
+        </p>
+        <p class="status" role="status"></p>
+      </form>
+
+      <form id="register-form" class="panel" novalidate>
+        <h1>Register</h1>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input
+            type="password"
+            name="password"
+            autocomplete="new-password"
+            required
+          />
+        </label>
+
+        <label class="field">
+          <span>Confirm Password</span>
+          <input
+            type="password"
+            name="confirm"
+            autocomplete="new-password"
+            required
+          />
+        </label>
+
+        <button type="submit" class="submit">Create account</button>
+
+        <p class="switch">
+          Already have an account
+          <button type="button" class="link" data-show="login">Login</button>
+        </p>
+        <p class="status" role="status"></p>
+      </form>
+
+      <form id="forgot-form" class="panel" novalidate>
+        <h1>Reset</h1>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <button type="submit" class="submit">Send reset link</button>
+
+        <p class="switch">
+          Remembered it?
+          <button type="button" class="link" data-show="login">Login</button>
+        </p>
+        <p class="status" role="status"></p>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
